@@ -23,6 +23,17 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+fun AppWordGuess() {
+    val pantallaActual = remember { mutableStateOf(Pantalla.HOME) }
+
+    when (pantallaActual.value) {
+        Pantalla.HOME -> HomeScreen(pantallaActual)
+        Pantalla.JUEGO -> Text("Pantalla de juego")
+        Pantalla.ESTADISTICAS -> Text("Pantalla de estadísticas")
+    }
+}
+
+@Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
