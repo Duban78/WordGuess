@@ -51,3 +51,10 @@ enum class Pantalla {
     JUEGO,
     ESTADISTICAS
 }
+
+enum class Estado {
+    CORRECTA,   // verde
+    PRESENTE,   // amarillo
+    AUSENTE,    // gris
+    VACIA       // todavía sin letra
+}
