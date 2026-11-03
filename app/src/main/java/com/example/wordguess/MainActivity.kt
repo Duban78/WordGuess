@@ -16,6 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.wordguess.ui.theme.WordGuessTheme
 import com.example.wordguess.view.HomeScreen
 import com.example.wordguess.view.JuegoScreen
+import com.example.wordguess.view.EstadisticasScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +34,7 @@ fun AppWordGuess() {
     when (pantallaActual.value) {
         Pantalla.HOME -> HomeScreen(pantallaActual)
         Pantalla.JUEGO -> JuegoScreen(pantallaActual)
-        Pantalla.ESTADISTICAS -> Text("Pantalla de estadísticas")
+        Pantalla.ESTADISTICAS -> EstadisticasScreen(pantallaActual)
     }
 }
 
