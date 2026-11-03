@@ -45,3 +45,9 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+enum class Pantalla {
+    HOME,
+    JUEGO,
+    ESTADISTICAS
+}
